@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from './components/navbar/index';
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import { useEffect, useRef } from 'react';
+import SmoothScrolling from "@/components/SmoothScrolling";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,10 @@ export default function RootLayout({
       
       <body className={inter.className}>
         <Navbar/>
+        <SmoothScrolling >
         {children}
+        </SmoothScrolling>
+       
         </body>
     </html>
   )
