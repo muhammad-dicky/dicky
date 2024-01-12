@@ -5,12 +5,11 @@ import React from 'react'
 const textStyle = {
     color: '#8C8C73',
 }
-export default function About() {
+export default function Services() {
   return (
     <>
     <div className=''>
 
-    <div className='h-80 text-6xl font-bold lg:text-7xl mt-40 '>I create elevating digital experiences that inspire and connect with people through development and design.</div>
 
 <div className='flex items-center justify-center '>
     <div className='flex text-6xl lg:text-8xl text-center pt-56 font-bold'>
@@ -25,13 +24,14 @@ export default function About() {
     <Image className='rounded-xl' src={'/diki.jpeg'} priority width={500} height={500} alt={''}/>
 </div>
 <div className='flex-1 space-y-10'>
-    <div className='text-4xl font-bold'>A brief intro, who am I?</div>
+    <div className='text-4xl lg:text-9xl font-bold'>A brief intro, who am I?</div>
     <div>I am an independent web developer based in Bali, Indonesia.</div>
     <div>I specialize in crafting elevated, intuitive, and minimalistic design for startups and small businesses to help them stand out in the digital landscape with a powerful impact.🔥</div>
     <div>Whe I am not developing or designing, I enjoy spending my leisure time playing relaxing games like Genshin Impact or competitive games like Valorant. These games provide me with a balance of relaxation and excitement.🎮</div>
 </div>
 </div>
 
+<div className='pt-96'>this div testing</div>
 
     </div>
     </>

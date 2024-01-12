@@ -1,5 +1,9 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import gsap from "gsap";
 import Link from "next/link";
+import { useEffect } from "react";
 
 
 const primaryColor = {
@@ -7,8 +11,19 @@ const primaryColor = {
   };
 
 const Navbar = () => {
+    useEffect(() => {
+        const navElement = document.querySelector('.intro-nav');
+
+        gsap.set([navElement], { y:-75});
+
+        const tl = gsap.timeline({defaults: {animation: 'visible'}});
+
+        tl.to(navElement, {opacity: 1, y:0, duration: 1.5});
+
+        tl.play();
+    }, []);
     return ( 
-        <div className="w-full h-20 sticky top-0 bg-white">
+        <div className="w-full h-20 sticky top-0 bg-white intro-nav">
             <div className="container mx-auto px-4 h-full">
                 <div className="flex justify-between items-center h-full">
                     DICKY
