@@ -47,6 +47,8 @@
  
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
+
+    --primary-text: #262626;
  
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -71,6 +73,13 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-color: #FAFAF9;
+    color: hsl(var(--primary-text));
+    background-color: hsl(var(--primary-text));
+    
   }
 }
+
+
+

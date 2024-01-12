@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/navbar/index';
+import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
+import { useEffect, useRef } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +17,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
+  
+      return (
+        <html lang="en">
+      
       <body className={inter.className}>
         <Navbar/>
         {children}

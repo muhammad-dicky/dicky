@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+
+const primaryColor = {
+    color: '#262626',
+  };
+
 const Navbar = () => {
     return ( 
-        <div className="w-full h-20 sticky top-0">
+        <div className="w-full h-20 sticky top-0 bg-white">
             <div className="container mx-auto px-4 h-full">
                 <div className="flex justify-between items-center h-full">
                     DICKY
@@ -23,7 +28,7 @@ const Navbar = () => {
                                 <p> Projects </p>
                             </Link>
                         </li>
-                        <Button className="py-6 px-11 rounded-full">
+                        <Button className="py-6 px-11 rounded-full " >
                             Let's Talk.
                         </Button>
                     </ul>

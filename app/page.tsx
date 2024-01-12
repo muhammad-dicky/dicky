@@ -1,4 +1,11 @@
+import { ArrowBigRight, ArrowDown } from 'lucide-react'
 import Image from 'next/image'
+import About from './components/about'
+
+
+const textStyle = {
+  color: '#262626'
+}
 
 export default function Home() {
   return (
@@ -23,15 +30,22 @@ export default function Home() {
   <div className='flex justify-center items-center h-screen relative'>
     
     <div className='p-10 max-w-sm rounded overflow-visible border border-black shadow-lg text-center relative'>
-      <div className=' font-bold text-9xl mb-2 '>
+      <div className=' font-extrabold text-9xl mb-2 ' style={textStyle}>
         HEY, I'M DICKY
       </div>
     </div>
-    <div className='font-bold transform rotate-90'>
+    <div className='font-bold transform rotate-90  '>
     ウェブ開発者
     </div>
+
+<div className='absolute transform rotate-90 right-0 hidden md:block'>scroll</div>
   </div>
+
+
+
+  <About/>
 </main>
+
 
 
       
