@@ -13,7 +13,7 @@ export default function About() {
     <div className='h-80 text-6xl font-bold lg:text-7xl mt-40 '>I create elevating digital experiences that inspire and connect with people through development and design.</div>
 
 <div className='flex items-center justify-center '>
-    <div className='flex text-6xl lg:text-8xl text-center pt-56 font-bold'>
+    <div className='flex text-7xl lg:text-8xl text-center pt-56 font-bold'>
     <Image src={'crop.svg'}  width={40} height={40} alt={''}/>
     <span className='px-5' style={textStyle} >ABOUT ME</span>  
     <Image src={'crop.svg'}  width={40} height={40} alt={''}/>

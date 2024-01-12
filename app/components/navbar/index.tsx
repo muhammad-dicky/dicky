@@ -14,7 +14,7 @@ const Navbar = () => {
     useEffect(() => {
         const navElement = document.querySelector('.intro-nav');
 
-        gsap.set([navElement], { y:-75});
+        gsap.set([navElement], { y:-100});
 
         const tl = gsap.timeline({defaults: {animation: 'visible'}});
 
