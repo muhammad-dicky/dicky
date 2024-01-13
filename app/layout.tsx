@@ -24,7 +24,7 @@ export default function RootLayout({
         <html lang="en">
       
       <body className={inter.className}>
-        <AnimatedCursor/>
+        <AnimatedCursor outerSize={10} innerSize={10} />
         <Navbar/>
         <SmoothScrolling >
         {children}
