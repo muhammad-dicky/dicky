@@ -95,6 +95,16 @@ p {
 }
 
 
+/* .mouse {
+  background: #262626 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+  position: relative;
+  width: 52px;
+  height: 88px;
+  background-size: 100% 100%;
+  border-radius: 100px;
+  background-size: 225%;
+  animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+} */
 .mouse {
   background: #262626 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
   position: relative;
@@ -299,3 +309,68 @@ p {
     color: #ffffff;
   }
 }
+
+
+
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#8C8C73, #8C8C73)
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+
+
+
+.link-strikethrough {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-strikethrough-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#8C8C73, #8C8C73)
+}
+
+.link-strikethrough:hover {
+  background-size: 100% 3px;
+  background-position: 0 50%
+}
+
+.image-container{
+  width: 100% !important;
+  overflow: hidden;
+  >div{
+    position: unset;
+  }
+
+  .image{
+    object-fit: cover;
+    width: 100% !important;
+    position: relative !important;
+    height: unset!important;
+  }
+
+  .image:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+  }
+
+}
+
+

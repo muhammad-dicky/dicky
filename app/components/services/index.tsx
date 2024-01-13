@@ -24,7 +24,7 @@ export default function Services() {
 </div>
 
 <div className='flex justify-between pt-20 space-x-20'>
-<div className='flex-1 space-y-10'>
+<div className='flex-1 space-y-5'>
     <div className='text-4xl lg:text-9xl font-bold'>my expertises.</div>
     <div>I focus on all things design and web related. With each of my services,my goal is to deliver an impactful and elevating digital experiene for everyone.</div>
 </div>
@@ -35,7 +35,22 @@ export default function Services() {
 </div>
 </div>
 
-<div className='pt-96'>this div testing</div>
+
+<div className='flex justify-between pt-20 space-x-20'>
+<div className='flex-1 space-y-5'>
+    <div className='text-4xl lg:text-9xl font-bold'>my digital tool box.</div>
+    <div>These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons.</div>
+</div>
+<div className='flex-1'>
+    <div className='md:text-4xl text-2xl font-extrabold ' style={textServices}>ReactJS</div>
+    <div className='md:text-4xl text-2xl font-extrabold ' style={textServices}>NextJS</div>
+    <div className='md:text-4xl text-2xl font-extrabold ' style={textServices}>ExpressJS</div>
+    <div className='md:text-4xl text-2xl font-extrabold' style={textServices}>FIGMA</div>
+    <div className='md:text-4xl text-2xl font-extrabold' style={textServices}>TailwindCSS</div>
+    <div className='md:text-4xl text-2xl font-extrabold' style={textServices}>PHP</div>
+</div>
+</div>
+
 
     </div>
     </>

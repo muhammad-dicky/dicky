@@ -23,33 +23,43 @@ const Navbar = () => {
         tl.play();
     }, []);
     return ( 
+        <>
+        
         <div className="w-full h-20 sticky top-0 bg-white intro-nav">
             <div className="container mx-auto px-4 h-full">
                 <div className="flex justify-between items-center h-full">
                     DICKY
                     <ul className="hidden md:flex gap-x-6 items-center">
-                        <li>
+                        <li className="transition duration-300 font-display leading-tight">
                             <Link href={"/about"}>
-                                <p> About </p>
+                                <p className="link-underline link-underline-black "> About </p>
                             </Link>
                         </li>
-                        <li>
+                        <li className="transition duration-300 font-display leading-tight">
                             <Link href={"/services"}>
-                                <p> Services </p>
+                                <p className="link-underline link-underline-black "> Services </p>
                             </Link>
                         </li>
-                        <li>
+                        <li className="transition duration-300 font-display leading-tight">
                             <Link href={"/projects"}>
-                                <p> Projects </p>
+                                <p className="link-underline link-underline-black "> Projects </p>
                             </Link>
                         </li>
-                        <Button className="py-6 px-11 rounded-full " >
+                        <div className="leading-strikethrough">
+                        <Button className="py-6 px-10 rounded-full" >
+                            <span className="link-strikethrough link-strikethrough-black">
                             Let&apos;s Talk.
+                            </span>
                         </Button>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
+
+      
+
+        </>
      );
 }
 

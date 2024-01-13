@@ -8,6 +8,7 @@ import gsap from 'gsap'
 import { TypeAnimation } from 'react-type-animation';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Services from './components/services';
+import Projects from './components/projects';
 
 
 const textStyle = {
@@ -20,11 +21,13 @@ export default function Home() {
     const boxElement = document.querySelector('.intro-box');
 
     const japanElement = document.querySelector('.intro-japan');
+    const scrollElement = document.querySelector('.intro-scroll');
    
 
     gsap.set([textElement], {opacity:0, scale:5});
     gsap.set([boxElement], {opacity:0, scale: 0.5});
     gsap.set([japanElement], {opacity:0, y:-100});
+    gsap.set([scrollElement], {opacity:0, y:100});
     
 
 
@@ -38,6 +41,7 @@ export default function Home() {
     .to(boxElement, {opacity: 1, scale:1, duration: 1.5}, '-=1.5')
     
     japan.to(japanElement, {opacity: 1, y: 0, duration:1.5});
+    scroll.to(scrollElement, {opacity: 1, y: 0, duration:1.5});
 
     japan.play();
     scroll.play();
@@ -93,7 +97,7 @@ export default function Home() {
 <>
 
 <main className='container overflow-x-hidden'>
-  <div className='flex justify-center items-center h-screen relative '>
+  <div className='py-28 flex justify-center items-center h-fit relative '>
 
     <div className='p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box'>
       <div className=' font-extrabold text-9xl mb-2 intro-text' style={textStyle}>
@@ -106,7 +110,7 @@ export default function Home() {
 
   </div>
 
-  <div className='flex justify-center'>
+  <div className='flex justify-center intro-scroll'>
   <div className='text-center'>
 <div className='mouse'></div>
 <p className='pt-2 scroll tracking-widest'>Scroll</p>
@@ -116,6 +120,7 @@ export default function Home() {
 
   <About/>
   <Services/>
+  <Projects/>
 </main>
 </>
     
