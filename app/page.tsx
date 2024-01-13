@@ -97,7 +97,7 @@ export default function Home() {
 
     <div className='p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box'>
       <div className=' font-extrabold text-9xl mb-2 intro-text' style={textStyle}>
-        HEY, I'M DICKY
+        HEY, I&apos;M DICKY
       </div>
     </div>
     <div className='font-bold transform rotate-90 intro-japan'>

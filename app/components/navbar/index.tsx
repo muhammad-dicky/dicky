@@ -44,7 +44,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <Button className="py-6 px-11 rounded-full " >
-                            Let's Talk.
+                            Let&apos;s Talk.
                         </Button>
                     </ul>
                 </div>
