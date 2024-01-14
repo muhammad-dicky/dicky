@@ -1,11 +1,53 @@
+"use client";
+
+import { Github, Linkedin, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import Clock from "./Clock";
+import { SiBento } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 // import crop from '../../../public/crop.svg'
 
 const textStyle = {
   color: "#8C8C73",
 };
+
+const formSchema = z.object({
+  name: z.string().min(2).max(50),
+  email: z.string().min(2).max(50),
+  message: z.string().min(1),
+});
+
 export default function Contact() {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  function onSubmit(value: z.infer<typeof formSchema>) {
+    console.log(value);
+  }
+
   return (
     <>
       <div className="">
@@ -19,28 +61,134 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex justify-between pt-20 space-x-5">
-          <div className="flex-1">
-            <h1 className="text-xl font-bold">
+        <div className="flex flex-col lg:flex-row justify-between pt-20 lg:space-x-32  space-x-5">
+          <div className="flex-1 ">
+            <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold pb-5">
               Have an awesome idea? <br /> Let&apos;s bring to life.
             </h1>
-            <p>I am currently available for freelance work.</p>
+            <p className="pb-10">
+              I am currently available for freelance & fulltime work.
+            </p>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)}>
+                <div className="flex space-x-2">
+                  <div className="flex-1 pb-5">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormControl className="border-b-4">
+                            <Input placeholder="Your name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormControl className="border-b-4">
+                            <Input
+                              type="text"
+                              placeholder="Your email"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl className="border-b-4">
+                        <Textarea placeholder="Your message" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <div className="pt-5">
+                  <Button className="rounded-full py-6 px-7" type="submit">
+                    Send Message
+                  </Button>
+                </div>
+              </form>
+            </Form>
           </div>
-          <div className="flex-1 space-y-10">
-            <div className="text-4xl font-bold">A brief intro, who am I?</div>
+          <div className="flex-1 pt-20 lg:pt-0 space-y-10 lg:space-y-20">
             <div>
-              I am an independent web developer based in Bali, Indonesia.
+              <div className="text-xl lg:text-3xl font-bold pb-4">
+                Contact Details
+              </div>
+              <a
+                className="link-underline link-underline-black"
+                href="mailto:muhammad.dickynn@gmail.com"
+              >
+                muhammad.dickynn@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <div className="text-xl lg:text-3xl font-bold pb-4">
+                My Digital Spaces
+              </div>
+
+              <div className="space-y-4 ">
+                <div className="flex items-center ">
+                  <FaGithub className="w-5" />
+                  <Link
+                    className="pl-2"
+                    target="_blank"
+                    href={"https://github.com/muhammad-dicky"}
+                  >
+                    <p className="link-underline link-underline-black">
+                      Github
+                    </p>
+                  </Link>
+                </div>
+                <div className="flex items-center ">
+                  <SiBento className="w-5" />
+                  <Link
+                    className="pl-2"
+                    target="_blank"
+                    href={"https://bento.me/dickyn"}
+                  >
+                    <p className="link-underline link-underline-black">Bento</p>
+                  </Link>
+                </div>
+
+                <div className="flex items-center">
+                  <FaLinkedin className="w-5" />
+                  <Link
+                    className="pl-2"
+                    target="_blank"
+                    href={
+                      "https://www.linkedin.com/in/muhammad-dicky-7402331b6/"
+                    }
+                  >
+                    <p className="link-underline link-underline-black">
+                      LinkedIn
+                    </p>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div>
-              I specialize in crafting elevated, intuitive, and minimalistic
-              design for startups and small businesses to help them stand out in
-              the digital landscape with a powerful impact.🔥
-            </div>
-            <div>
-              Whe I am not developing or designing, I enjoy spending my leisure
-              time playing relaxing games like Genshin Impact or competitive
-              games like Valorant. These games provide me with a balance of
-              relaxation and excitement.🎮
+              <div className="text-xl lg:text-3xl font-bold pb-3">Location</div>
+              <p>Bali, Indonesia</p>
+              <p>
+                <Clock />
+              </p>
             </div>
           </div>
         </div>

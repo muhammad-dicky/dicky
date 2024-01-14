@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Services from "./components/services";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const textStyle = {
   color: "#262626",
@@ -116,6 +117,7 @@ export default function Home() {
         <Services />
         <Projects />
         <Contact />
+        <Footer />
       </main>
     </>
   );
