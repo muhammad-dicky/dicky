@@ -25,7 +25,7 @@ export default function Services() {
 
         <div className="flex justify-between pt-20 space-x-20">
           <div className="flex-1 space-y-5">
-            <div className="text-4xl lg:text-9xl font-bold">my expertises.</div>
+            <div className="text-4xl lg:text-7xl font-bold">my expertises.</div>
             <div>
               I focus on all things design and web related. With each of my
               services,my goal is to deliver an impactful and elevating digital
@@ -34,19 +34,19 @@ export default function Services() {
           </div>
           <div className="flex-1">
             <div
-              className="md:text-4xl text-2xl font-extrabold "
+              className="md:text-6xl text-2xl font-extrabold "
               style={textServices}
             >
               Web Development
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold"
+              className="md:text-6xl text-2xl font-extrabold"
               style={textServices}
             >
               Web Design
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold"
+              className="md:text-6xl text-2xl font-extrabold"
               style={textServices}
             >
               UI/UX Design
@@ -56,7 +56,7 @@ export default function Services() {
 
         <div className="flex justify-between pt-20 space-x-20">
           <div className="flex-1 space-y-5">
-            <div className="text-4xl lg:text-9xl font-bold">
+            <div className="text-4xl lg:text-7xl font-bold">
               my digital tool box.
             </div>
             <div>
@@ -67,37 +67,37 @@ export default function Services() {
           </div>
           <div className="flex-1">
             <div
-              className="md:text-4xl text-2xl font-extrabold "
+              className="md:text-6xl text-2xl font-extrabold "
               style={textServices}
             >
               ReactJS
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold "
+              className="md:text-6xl text-2xl font-extrabold "
               style={textServices}
             >
               NextJS
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold "
+              className="md:text-6xl text-2xl font-extrabold "
               style={textServices}
             >
               ExpressJS
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold"
+              className="md:text-6xl text-2xl font-extrabold"
               style={textServices}
             >
               FIGMA
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold"
+              className="md:text-6xl text-2xl font-extrabold"
               style={textServices}
             >
               TailwindCSS
             </div>
             <div
-              className="md:text-4xl text-2xl font-extrabold"
+              className="md:text-6xl text-2xl font-extrabold"
               style={textServices}
             >
               PHP

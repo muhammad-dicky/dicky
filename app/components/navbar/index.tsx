@@ -3,7 +3,9 @@
 import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import About from "../about/index";
+// import Link from "react-scroll";
 
 const primaryColor = {
   color: "#262626",
@@ -29,7 +31,7 @@ const Navbar = () => {
             DICKY
             <ul className="hidden md:flex gap-x-6 items-center">
               <li className="transition duration-300 font-display leading-tight">
-                <Link href={"/about"}>
+                <Link href="#about">
                   <p className="link-underline link-underline-black ">
                     {" "}
                     About{" "}

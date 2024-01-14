@@ -8,7 +8,7 @@ const textStyle = {
 export default function About() {
   return (
     <>
-      <div className="">
+      <div className="about" id="about">
         <div className="h-80 text-6xl font-bold lg:text-7xl mt-40 ">
           I create elevating digital experiences that inspire and connect with
           people through development and design.
