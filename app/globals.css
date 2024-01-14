@@ -414,6 +414,7 @@ p {
 .image-container {
   width: 100% !important;
   overflow: hidden;
+  padding-bottom: 0px;
 
   >div {
     position: unset;
@@ -428,7 +429,6 @@ p {
 
   .image:hover {
     transform: scale(1.05);
-    border-radius: 10px;
   }
 
 }

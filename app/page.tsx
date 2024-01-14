@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Services from "./components/services";
 import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 const textStyle = {
   color: "#262626",
@@ -114,6 +115,7 @@ export default function Home() {
         <About />
         <Services />
         <Projects />
+        <Contact />
       </main>
     </>
   );
