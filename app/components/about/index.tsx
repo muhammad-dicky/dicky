@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Reveal } from "../Reveal";
 // import crop from '../../../public/crop.svg'
 
 const textStyle = {
@@ -18,9 +19,11 @@ export default function About() {
         <div className="flex items-center justify-center ">
           <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
-            <span className="px-5 our-text" style={textStyle}>
-              ABOUT ME
-            </span>
+            <Reveal>
+              <span className="px-5 our-text" style={textStyle}>
+                ABOUT ME
+              </span>
+            </Reveal>
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
@@ -37,21 +40,29 @@ export default function About() {
             />
           </div>
           <div className="flex-1 space-y-10 lg:space-y-14 lg:text-xl">
-            <div className="text-4xl font-bold">A brief intro, who am I?</div>
-            <div>
-              I am an independent web developer based in Bali, Indonesia.
-            </div>
-            <div>
-              I specialize in crafting elevated, intuitive, and minimalistic
-              design for startups and small businesses to help them stand out in
-              the digital landscape with a powerful impact.🔥
-            </div>
-            <div>
-              Whe I am not developing or designing, I enjoy spending my leisure
-              time playing relaxing games like Genshin Impact or competitive
-              games like Valorant. These games provide me with a balance of
-              relaxation and excitement.🎮
-            </div>
+            <Reveal>
+              <div className="text-4xl font-bold">A brief intro, who am I?</div>
+            </Reveal>
+            <Reveal>
+              <div>
+                I am an independent web developer based in Bali, Indonesia.
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                I specialize in crafting elevated, intuitive, and minimalistic
+                design for startups and small businesses to help them stand out
+                in the digital landscape with a powerful impact.🔥
+              </div>
+            </Reveal>
+            <Reveal>
+              <div>
+                Whe I am not developing or designing, I enjoy spending my
+                leisure time playing relaxing games like Genshin Impact or
+                competitive games like Valorant. These games provide me with a
+                balance of relaxation and excitement.🎮
+              </div>
+            </Reveal>
           </div>
         </div>
       </div>

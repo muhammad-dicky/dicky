@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Reveal } from "../Reveal";
 // import crop from '../../../public/crop.svg'
 
 const textStyle = {
@@ -14,9 +15,12 @@ export default function Projects() {
         <div className="flex items-center justify-center ">
           <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
-            <span className="px-5" style={textStyle}>
-              PROJECTS
-            </span>
+            <Reveal>
+              <span className="px-5" style={textStyle}>
+                PROJECTS
+              </span>
+            </Reveal>
+
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
@@ -40,10 +44,14 @@ export default function Projects() {
               {" "}
               PHP • Bootstrap • MySQL{" "}
             </Badge>
-            <h1 className="pt-5 font-semibold">
-              SEMAKAR ADVENTURE - hiking equipment rental
-            </h1>
-            <p className="">Web Development </p>
+            <Reveal>
+              <h1 className="pt-5 font-semibold">
+                SEMAKAR ADVENTURE - hiking equipment rental
+              </h1>
+            </Reveal>
+            <Reveal>
+              <p className="">Web Development </p>
+            </Reveal>
           </div>
         </div>
 
@@ -66,10 +74,14 @@ export default function Projects() {
               <Badge variant={"outline"} className="py-2 px-6">
                 PHP • Bootstrap • MySQL
               </Badge>
-              <h1 className="pt-5 font-semibold">
-                BAKPIA TAMANSARI - Taste the Tradition
-              </h1>
-              <p className="">Web Development </p>
+              <Reveal>
+                <h1 className="pt-5 font-semibold">
+                  BAKPIA TAMANSARI - Taste the Tradition
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="">Web Development </p>
+              </Reveal>
             </div>
           </div>
           <div className="flex-1">
@@ -90,10 +102,14 @@ export default function Projects() {
               <Badge variant={"outline"} className="py-2 px-6">
                 NextJS • Shadcn-ui • TailwindCSS
               </Badge>
-              <h1 className="pt-5 font-semibold">
-                TravelFun - Explore the World with Excitement and Ease
-              </h1>
-              <p className="">Web Development </p>
+              <Reveal>
+                <h1 className="pt-5 font-semibold">
+                  TravelFun - Explore the World with Excitement and Ease
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="">Web Development </p>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -117,10 +133,14 @@ export default function Projects() {
               <Badge variant={"outline"} className="py-2 px-6">
                 PHP • Bootstrap • MySQL
               </Badge>
-              <h1 className="pt-5 font-semibold">
-                FORKOM UMKM - Business Portfolio
-              </h1>
-              <p className="">Web Development </p>
+              <Reveal>
+                <h1 className="pt-5 font-semibold">
+                  FORKOM UMKM - Business Portfolio
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="">Web Development </p>
+              </Reveal>
             </div>
           </div>
           <div className="">
@@ -141,10 +161,14 @@ export default function Projects() {
               <Badge variant={"outline"} className="py-2 px-6">
                 NextJS • Shadcn-ui • PostgreSQL • TailwindCSS • Stripe
               </Badge>
-              <h1 className="pt-5 font-semibold">
-                KratonePetshop - pet equipment shop
-              </h1>
-              <p className="">Web Development </p>
+              <Reveal>
+                <h1 className="pt-5 font-semibold">
+                  KratonePetshop - pet equipment shop
+                </h1>
+              </Reveal>
+              <Reveal>
+                <p className="">Web Development </p>
+              </Reveal>
             </div>
           </div>
         </div>

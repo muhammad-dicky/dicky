@@ -22,6 +22,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Reveal } from "../Reveal";
 // import crop from '../../../public/crop.svg'
 
 const textStyle = {
@@ -54,21 +55,27 @@ export default function Contact() {
         <div className="flex items-center justify-center ">
           <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
-            <span className="px-5" style={textStyle}>
-              CONTACT
-            </span>
+            <Reveal>
+              <span className="px-5" style={textStyle}>
+                CONTACT
+              </span>
+            </Reveal>
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between pt-20 lg:space-x-32  space-x-5">
           <div className="flex-1 ">
-            <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold pb-5">
-              Have an awesome idea? <br /> Let&apos;s bring to life.
-            </h1>
-            <p className="pb-10">
-              I am currently available for freelance & fulltime work.
-            </p>
+            <Reveal>
+              <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold pb-5">
+                Have an awesome idea? <br /> Let&apos;s bring to life.
+              </h1>
+            </Reveal>
+            <Reveal>
+              <p className="pb-10">
+                I am currently available for freelance & fulltime work.
+              </p>
+            </Reveal>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
                 <div className="flex space-x-2">
@@ -127,9 +134,11 @@ export default function Contact() {
           </div>
           <div className="flex-1 pt-20 lg:pt-0 space-y-10 lg:space-y-20">
             <div>
-              <div className="text-xl lg:text-3xl font-bold pb-4">
-                Contact Details
-              </div>
+              <Reveal>
+                <div className="text-xl lg:text-3xl font-bold pb-4">
+                  Contact Details
+                </div>
+              </Reveal>
               <a
                 className="link-underline link-underline-black"
                 href="mailto:muhammad.dickynn@gmail.com"
@@ -139,9 +148,11 @@ export default function Contact() {
             </div>
 
             <div>
-              <div className="text-xl lg:text-3xl font-bold pb-4">
-                My Digital Spaces
-              </div>
+              <Reveal>
+                <div className="text-xl lg:text-3xl font-bold pb-4">
+                  My Digital Spaces
+                </div>
+              </Reveal>
 
               <div className="space-y-4 ">
                 <div className="flex items-center ">
@@ -184,8 +195,14 @@ export default function Contact() {
               </div>
             </div>
             <div>
-              <div className="text-xl lg:text-3xl font-bold pb-3">Location</div>
-              <p>Bali, Indonesia</p>
+              <Reveal>
+                <div className="text-xl lg:text-3xl font-bold pb-3">
+                  Location
+                </div>
+              </Reveal>
+              <Reveal>
+                <p>Bali, Indonesia</p>
+              </Reveal>
 
               <Clock />
             </div>
