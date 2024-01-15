@@ -10,7 +10,7 @@ const textStyle = {
 export default function Projects() {
   return (
     <>
-      <div className="">
+      <div className="" id="projects">
         <div className="flex items-center justify-center ">
           <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />

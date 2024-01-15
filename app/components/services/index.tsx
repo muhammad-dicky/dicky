@@ -14,7 +14,10 @@ export default function Services() {
     <>
       <div className="">
         <div className="flex items-center justify-center ">
-          <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
+          <div
+            className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold"
+            id="services"
+          >
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
             <span className="px-5" style={textStyle}>
               SERVICES

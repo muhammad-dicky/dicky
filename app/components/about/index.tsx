@@ -5,6 +5,7 @@ import React from "react";
 const textStyle = {
   color: "#8C8C73",
 };
+
 export default function About() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function About() {
         <div className="flex items-center justify-center ">
           <div className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
-            <span className="px-5" style={textStyle}>
+            <span className="px-5 our-text" style={textStyle}>
               ABOUT ME
             </span>
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
@@ -35,7 +36,7 @@ export default function About() {
               alt={""}
             />
           </div>
-          <div className="flex-1 space-y-10">
+          <div className="flex-1 space-y-10 lg:space-y-14 lg:text-xl">
             <div className="text-4xl font-bold">A brief intro, who am I?</div>
             <div>
               I am an independent web developer based in Bali, Indonesia.

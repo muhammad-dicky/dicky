@@ -16,6 +16,7 @@
     "@studio-freight/react-lenis": "^0.0.43",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "lucide-react": "^0.309.0",
     "moment-timezone": "^0.5.44",
@@ -27,6 +28,7 @@
     "react-icons": "^5.0.1",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
+    "split-type": "^0.3.4",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"

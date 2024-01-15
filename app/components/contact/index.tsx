@@ -186,9 +186,8 @@ export default function Contact() {
             <div>
               <div className="text-xl lg:text-3xl font-bold pb-3">Location</div>
               <p>Bali, Indonesia</p>
-              <p>
-                <Clock />
-              </p>
+
+              <Clock />
             </div>
           </div>
         </div>

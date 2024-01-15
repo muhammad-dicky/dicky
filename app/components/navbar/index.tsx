@@ -12,6 +12,18 @@ const primaryColor = {
 };
 
 const Navbar = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     const navElement = document.querySelector(".intro-nav");
 
@@ -31,7 +43,7 @@ const Navbar = () => {
             DICKY
             <ul className="hidden md:flex gap-x-6 items-center">
               <li className="transition duration-300 font-display leading-tight">
-                <Link href="#about">
+                <Link href="#about" onClick={handleScroll}>
                   <p className="link-underline link-underline-black ">
                     {" "}
                     About{" "}
@@ -39,7 +51,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="transition duration-300 font-display leading-tight">
-                <Link href={"/services"}>
+                <Link href="#services" onClick={handleScroll}>
                   <p className="link-underline link-underline-black ">
                     {" "}
                     Services{" "}
@@ -47,7 +59,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="transition duration-300 font-display leading-tight">
-                <Link href={"/projects"}>
+                <Link href="#projects" onClick={handleScroll}>
                   <p className="link-underline link-underline-black ">
                     {" "}
                     Projects{" "}
