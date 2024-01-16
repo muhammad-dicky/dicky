@@ -1,6 +1,5 @@
 "use client";
 
-import { Github, Linkedin, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,6 +9,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import {
   Form,
   FormControl,
@@ -23,6 +23,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Reveal } from "../Reveal";
+import sendEmail from "@/lib/send-email";
+// import { useToast } from "@/components/ui/use-toast";
 // import crop from '../../../public/crop.svg'
 
 const textStyle = {
@@ -36,6 +38,8 @@ const formSchema = z.object({
 });
 
 export default function Contact() {
+  // const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -45,8 +49,17 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(value: z.infer<typeof formSchema>) {
-    console.log(value);
+  // function onSubmit(value: z.infer<typeof formSchema>) {
+  //   sendEmail(value);
+  // }
+  async function onSubmit(value: z.infer<typeof formSchema>) {
+    try {
+      sendEmail(value);
+      toast.success("Email sent successfully!");
+    } catch (error) {
+      console.error(error);
+      toast.error("Error sending email");
+    }
   }
 
   return (
@@ -76,6 +89,7 @@ export default function Contact() {
                 I am currently available for freelance & fulltime work.
               </p>
             </Reveal>
+
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
                 <div className="flex space-x-2">
@@ -101,7 +115,7 @@ export default function Contact() {
                         <FormItem>
                           <FormControl className="border-b-4">
                             <Input
-                              type="text"
+                              type="email"
                               placeholder="Your email"
                               {...field}
                             />
