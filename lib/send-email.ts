@@ -9,11 +9,21 @@ export default function sendEmail(value:any) {
       method: 'POST',
       body: JSON.stringify(value),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if(!res.ok){
+          throw new Error('Failed to send email');
+        }
+        return res.json();
+      })
       .then((response) => {
-        alert(response.message);
+        if(response && response.status === 'success'){
+
+          alert(response.message);
+        }else{
+          throw new Error('Unexpected response from the server')
+        }
       })
       .catch((err) => {
-        alert(err);
+        console.log(err)
       });
 }

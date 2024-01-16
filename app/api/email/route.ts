@@ -73,9 +73,10 @@ export async function POST(request: NextRequest) {
 
     await transport.sendMail(mailOptions);
     
-    return NextResponse.json({});
+    return NextResponse.json({status:'succes'});
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+
   }
 }
