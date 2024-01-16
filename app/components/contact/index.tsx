@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Clock from "./Clock";
 import { SiBento } from "react-icons/si";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -56,6 +56,12 @@ export default function Contact() {
     try {
       sendEmail(value);
       toast.success("Email sent successfully!");
+
+      form.reset({
+        name: "",
+        email: "",
+        message: "",
+      });
     } catch (error) {
       console.error(error);
       toast.error("Error sending email");
