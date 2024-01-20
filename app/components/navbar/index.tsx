@@ -102,7 +102,7 @@ const Navbar = () => {
                 <div className="leading-strikethrough">
                   <Button className="py-6 px-10 rounded-full">
                     <span className="link-strikethrough link-strikethrough-black">
-                      Let's Talk.
+                      Let&apos;s Talk.
                     </span>
                   </Button>
                 </div>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 <div className="leading-strikethrough">
                   <Button className="py-6 px-10 rounded-full">
                     <span className="link-strikethrough link-strikethrough-black">
-                      Let's Talk.
+                      Let&apos;s Talk.
                     </span>
                   </Button>
                 </div>

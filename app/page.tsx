@@ -101,7 +101,7 @@ export default function Home() {
               HEY, I&apos;M DICKY
             </div>
           </div>
-          <div className="font-bold transform rotate-90 intro-japan">
+          <div className="hidden md:block font-bold transform rotate-90 intro-japan">
             ウェブ開発者
           </div>
         </div>

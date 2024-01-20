@@ -22,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={inter.className}
+        style={{ paddingLeft: "1px", paddingRight: "1px" }}
+      >
         <AnimatedCursor outerSize={10} innerSize={10} />
         <Navbar />
         <SmoothScrolling>{children}</SmoothScrolling>

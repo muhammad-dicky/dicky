@@ -16,7 +16,7 @@ export default function Services() {
       <div className="">
         <div className="flex items-center justify-center ">
           <div
-            className="flex text-7xl lg:text-8xl text-center pt-56 font-semibold"
+            className="flex text-5xl lg:text-8xl text-center pt-56 font-semibold"
             id="services"
           >
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
@@ -30,8 +30,8 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex justify-between pt-20 space-x-20">
-          <div className="flex-1 space-y-5">
+        <div className="flex-row md:flex justify-between pt-20 md:space-x-20">
+          <div className="flex-1 space-y-5 ">
             <Reveal>
               <div className="text-4xl lg:text-7xl font-bold">
                 my expertises.
@@ -48,7 +48,7 @@ export default function Services() {
           <div className="flex-1">
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold "
+                className="md:text-6xl text-5xl font-extrabold "
                 style={textServices}
               >
                 Web Development
@@ -57,7 +57,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold"
+                className="md:text-6xl text-5xl font-extrabold"
                 style={textServices}
               >
                 Web Design
@@ -66,7 +66,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold"
+                className="md:text-6xl text-5xl font-extrabold"
                 style={textServices}
               >
                 UI/UX Design
@@ -75,8 +75,8 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex justify-between pt-20 space-x-20">
-          <div className="flex-1 space-y-5">
+        <div className="flex-row md:flex justify-between pt-20 md:space-x-20">
+          <div className="flex-1 space-y-5 ">
             <Reveal>
               <div className="text-4xl lg:text-7xl font-bold">
                 my digital tool box.
@@ -94,7 +94,7 @@ export default function Services() {
           <div className="flex-1">
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold "
+                className="md:text-6xl text-5xl font-extrabold "
                 style={textServices}
               >
                 ReactJS
@@ -103,7 +103,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold "
+                className="md:text-6xl text-5xl font-extrabold "
                 style={textServices}
               >
                 NextJS
@@ -112,7 +112,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold "
+                className="md:text-6xl text-5xl font-extrabold "
                 style={textServices}
               >
                 ExpressJS
@@ -121,7 +121,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold"
+                className="md:text-6xl text-5xl font-extrabold"
                 style={textServices}
               >
                 FIGMA
@@ -130,7 +130,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold"
+                className="md:text-6xl text-5xl font-extrabold"
                 style={textServices}
               >
                 TailwindCSS
@@ -139,7 +139,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-2xl font-extrabold"
+                className="md:text-6xl text-5xl font-extrabold"
                 style={textServices}
               >
                 PHP
