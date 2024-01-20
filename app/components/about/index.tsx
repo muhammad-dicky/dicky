@@ -10,14 +10,14 @@ const textStyle = {
 export default function About() {
   return (
     <>
-      <div className="about px-5" id="about">
+      <div className="about pr-5" id="about">
         <div className="h-80 text-6xl font-bold lg:text-7xl mt-40 text-center md:text-left mb-80 md:mb-0">
           I create elevating digital experiences that inspire and connect with
           people through development and design.
         </div>
 
         <div className="flex items-center justify-center ">
-          <div className="flex text-5xl lg:text-8xl text-center pt-56 font-semibold">
+          <div className="flex text-4xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
             <Reveal>
               <span className="px-5 our-text" style={textStyle}>
