@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <div className="about pr-5" id="about">
-        <div className="h-80 text-4xl font-bold md:text-6xl lg:text-7xl mt-40 text-center md:text-left mb-80 md:mb-0">
+        <div className="h-80 text-4xl font-bold md:text-6xl lg:text-7xl mt-40 text-center md:text-left mb-30 md:mb-0">
           I create elevating digital experiences that inspire and connect with
           people through development and design.
         </div>
