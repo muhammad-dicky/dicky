@@ -17,7 +17,7 @@ export default function About() {
         </div>
 
         <div className="flex items-center justify-center ">
-          <div className="flex text-4xl lg:text-8xl text-center md:pt-56 pt-10 font-semibold">
+          <div className="flex text-4xl lg:text-8xl text-center md:pt-56 pt-32 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />
             <Reveal>
               <span className="px-5 our-text" style={textStyle}>
