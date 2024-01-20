@@ -95,7 +95,7 @@ export default function Home() {
         <div className="py-28 flex justify-center items-center h-fit relative ">
           <div className="p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box">
             <div
-              className=" font-extrabold text-9xl mb-2 intro-text"
+              className=" font-extrabold text-8xl md:text-9xl mb-2 intro-text"
               style={textStyle}
             >
               HEY, I&apos;M DICKY

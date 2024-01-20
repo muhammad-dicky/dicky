@@ -10,8 +10,8 @@ const textStyle = {
 export default function About() {
   return (
     <>
-      <div className="about" id="about">
-        <div className="h-80 text-6xl font-bold lg:text-7xl mt-40 text-center md:text-left mb-40 md:mb-0">
+      <div className="container about" id="about">
+        <div className="h-80 text-6xl font-bold lg:text-7xl mt-40 text-center md:text-left mb-80 md:mb-0">
           I create elevating digital experiences that inspire and connect with
           people through development and design.
         </div>
