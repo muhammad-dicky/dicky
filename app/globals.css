@@ -75,7 +75,7 @@
 
   body {
     @apply text-foreground;
-    background-color: #FAFAF9;
+    /* background-color: #FAFAF9; */
     color: hsl(var(--primary-text));
     background-color: hsl(var(--primary-text));
 

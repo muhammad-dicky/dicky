@@ -57,6 +57,26 @@ export default function Contact() {
       sendEmail(value);
       toast.success("Email sent successfully!");
 
+      // testing
+      const response = await fetch(
+        "https://api.sheetmonkey.io/form/bikPxrSWGN3JF6RKmMmVYe",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(value),
+        }
+      );
+      if (response.ok) {
+        // Handle success (optional)
+        console.log("Form submitted successfully!");
+      } else {
+        // Handle error
+        console.error("Form submission failed:", response.status);
+      }
+      // batasbawah
+
       form.reset({
         name: "",
         email: "",
@@ -67,6 +87,24 @@ export default function Contact() {
       toast.error("Error sending email");
     }
   }
+
+  // TESTING API SHEETMONKEY
+  // const FormComponent = () => {
+  //   const [formData, setFormData] = useState({
+  //     name: '',
+  //     email: '',
+  //     message: '',
+  //   });
+
+  //   const handleChange = (e:any) => {
+  //     const { name, value } = e.target;
+  //     setFormData({ ...formData, [name]: value });
+  //   };
+
+  //   const handleSubmit = async (e:any) => {
+  //     e.preventDefault();
+
+  //   };
 
   return (
     <>
@@ -97,7 +135,10 @@ export default function Contact() {
             </Reveal>
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)}>
+              <form
+                action="https://api.sheetmonkey.io/form/bikPxrSWGN3JF6RKmMmVYe"
+                onSubmit={form.handleSubmit(onSubmit)}
+              >
                 <div className="flex space-x-2">
                   <div className="flex-1 pb-5">
                     <FormField

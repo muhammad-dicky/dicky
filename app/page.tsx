@@ -51,48 +51,39 @@ export default function Home() {
     tl.play();
   }, []);
 
+  gsap.registerPlugin(ScrollTrigger);
+  // SCROLL DARKMODE
   useEffect(() => {
-    const darkTheme = "dark";
-    const lightTheme = "light";
-    const scrollThreshold = 100;
+    const aboutSection = document.getElementById("about");
+    const body = document.body;
 
-    document.body.classList.add(lightTheme);
-
-    const handleThemeChange = () => {
-      const scrollPosition = window.scrollY;
-      const aboutSection = document.querySelector(".about-section");
-
-      if (scrollPosition > scrollThreshold) {
-        document.body.classList.remove(lightTheme);
-        document.body.classList.add(darkTheme);
-      } else {
-        document.body.classList.remove(darkTheme);
-        document.body.classList.add(lightTheme);
+    gsap.fromTo(
+      aboutSection,
+      { opacity: 0 },
+      {
+        scrollTrigger: {
+          trigger: aboutSection,
+          start: "top center",
+          end: "+=200",
+          scrub: true,
+        },
+        opacity: 1,
+        ease: "none",
+        onUpdate: (self) => {
+          if (self?.progress > 0.5) {
+            body.classList.add("dark-theme");
+          } else {
+            body.classList.remove("dark-theme");
+          }
+        },
       }
-
-      ScrollTrigger.create({
-        trigger: aboutSection,
-        start: "top center",
-        onEnter: () => {
-          document.body.classList.remove(lightTheme);
-          document.body.classList.add(darkTheme);
-        },
-        onLeaveBack: () => {
-          document.body.classList.remove(darkTheme);
-          document.body.classList.add(lightTheme);
-        },
-      });
-
-      handleThemeChange();
-
-      return () => ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
+    );
   }, []);
 
   return (
     <>
-      <main className="container overflow-x-hidden">
-        <div className="py-28 flex justify-center items-center h-fit relative ">
+      <main className="container overflow-x-hidden ">
+        <div className="py-28 flex justify-center items-center h-fit relative dark">
           <div className="p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box">
             <div
               className=" font-extrabold text-8xl md:text-9xl mb-2 intro-text"
