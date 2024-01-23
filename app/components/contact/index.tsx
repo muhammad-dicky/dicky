@@ -108,7 +108,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="">
+      <div id="contact" className="">
         <div className="flex items-center justify-center ">
           <div className="flex text-4xl lg:text-8xl text-center pt-56 font-semibold">
             <Image src={"crop.svg"} width={40} height={40} alt={""} />

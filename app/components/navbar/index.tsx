@@ -132,11 +132,13 @@ const Navbar = () => {
               </li>
               <li>
                 <div className="leading-strikethrough">
-                  <Button className="py-6 px-10 rounded-full">
-                    <span className="link-strikethrough link-strikethrough-black">
-                      Let&apos;s Talk.
-                    </span>
-                  </Button>
+                  <Link href="#contact">
+                    <Button className="py-6 px-10 rounded-full">
+                      <span className="link-strikethrough link-strikethrough-black">
+                        Let&apos;s Talk.
+                      </span>
+                    </Button>
+                  </Link>
                 </div>
               </li>
             </ul>
