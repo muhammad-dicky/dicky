@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
 
         <div>
-          <Link target="_blank" href={"https://semakaradventure.shop/"}>
+          <Link target="_blank" href={"https://ouma-bali.webflow.io/"}>
             <div className="image-container relative overflow-hidden bg-cover bg-no-repeat pt-10 ">
               <Image
                 className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
@@ -38,16 +38,14 @@ export default function Projects() {
           </Link>
           <div className="space-x-2 p-5">
             <Badge variant={"outline"} className="py-2 px-6">
-              2023
+              2025
             </Badge>
             <Badge variant={"outline"} className="py-2 px-6">
               {" "}
-              PHP • Bootstrap • MySQL{" "}
+              Webflow{" "}
             </Badge>
             <Reveal>
-              <h1 className="pt-5 font-semibold">
-                SEMAKAR ADVENTURE - hiking equipment rental
-              </h1>
+              <h1 className="pt-5 font-semibold">OUMA BALI - Digital Agency</h1>
             </Reveal>
             <Reveal>
               <p className="">Web Development </p>
@@ -57,11 +55,11 @@ export default function Projects() {
 
         <div className="flex pt-10 space-x-5 items-end">
           <div className="flex-1">
-            <Link target="_blank" href={"https://bakpiatamansari.shop/"}>
+            <Link target="_blank" href={"https://nivabali.com/"}>
               <div className="image-container relative overflow-hidden bg-no-repeat ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
-                  src={"/2.png"}
+                  src={"/niva.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
@@ -69,14 +67,14 @@ export default function Projects() {
             </Link>
             <div className="space-x-2 p-5">
               <Badge variant={"outline"} className="py-2 px-6">
-                2023
+                2025
               </Badge>
               <Badge variant={"outline"} className="py-2 px-6">
-                PHP • Bootstrap • MySQL
+                PHP • Wordpress • MySQL
               </Badge>
               <Reveal>
                 <h1 className="pt-5 font-semibold">
-                  BAKPIA TAMANSARI - Taste the Tradition
+                  NIVA PADONAN - Real Estate
                 </h1>
               </Reveal>
               <Reveal>
@@ -85,11 +83,14 @@ export default function Projects() {
             </div>
           </div>
           <div className="flex-1">
-            <Link target="_blank" href={"https://travelfunn.vercel.app/"}>
+            <Link
+              target="_blank"
+              href={"https://campaign.harcourtspurbabali.com/celesta-villa"}
+            >
               <div className="image-container relative overflow-hidden bg-cover bg-no-repeat  ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/3.png"}
+                  src={"/celesta.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
@@ -97,15 +98,13 @@ export default function Projects() {
             </Link>
             <div className="space-x-2 p-5">
               <Badge variant={"outline"} className="py-2 px-6">
-                2023
+                2025
               </Badge>
               <Badge variant={"outline"} className="py-2 px-6">
-                NextJS • Shadcn-ui • TailwindCSS
+                Framer
               </Badge>
               <Reveal>
-                <h1 className="pt-5 font-semibold">
-                  TravelFun - Explore the World with Excitement and Ease
-                </h1>
+                <h1 className="pt-5 font-semibold">Celesta - Real Estate</h1>
               </Reveal>
               <Reveal>
                 <p className="">Web Development </p>
