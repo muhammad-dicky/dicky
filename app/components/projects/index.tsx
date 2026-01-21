@@ -163,7 +163,7 @@ export default function Projects() {
               </Badge>
               <Reveal>
                 <h1 className="pt-5 font-semibold">
-                  Kratone Petshop - pet equipment shop
+                  Kratone Petshop - pet equipment shop.
                 </h1>
               </Reveal>
               <Reveal>
