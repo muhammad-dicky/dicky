@@ -30,7 +30,7 @@ export default function Projects() {
             <div className="image-container relative overflow-hidden bg-cover bg-no-repeat pt-10 ">
               <Image
                 className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
-                src={"/1.png"}
+                src={"/ouma.jpg"}
                 fill={true}
                 alt={"projects"}
               />
