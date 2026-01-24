@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
 
         <div>
-          <Link target="_blank" href={"https://ouma-bali.webflow.io/"}>
+          <Link target="_blank" href={"https://oumabali.com/"}>
             <div className="image-container relative overflow-hidden bg-cover bg-no-repeat pt-10 ">
               <Image
                 className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
