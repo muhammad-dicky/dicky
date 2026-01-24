@@ -57,7 +57,7 @@ export default function About() {
             </Reveal>
             <Reveal>
               <div>
-                Whe I am not developing or designing, I enjoy spending my
+                When I am not developing or designing, I enjoy spending my
                 leisure time playing relaxing games like Genshin Impact or
                 competitive games like Valorant. These games provide me with a
                 balance of relaxation and excitement.🎮
