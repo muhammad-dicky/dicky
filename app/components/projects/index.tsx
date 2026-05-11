@@ -26,11 +26,11 @@ export default function Projects() {
         </div>
 
         <div>
-          <Link target="_blank" href={"https://oumabali.com/"}>
+          <Link target="_blank" href={"https://harcourtspurbabali.vercel.app/"}>
             <div className="image-container relative overflow-hidden bg-cover bg-no-repeat pt-10 ">
               <Image
                 className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
-                src={"/ouma.jpg"}
+                src={"/hpb.jpg"}
                 fill={true}
                 alt={"projects"}
               />
@@ -38,14 +38,16 @@ export default function Projects() {
           </Link>
           <div className="space-x-2 p-5">
             <Badge variant={"outline"} className="py-2 px-6">
-              2025
+              2026
             </Badge>
             <Badge variant={"outline"} className="py-2 px-6">
               {" "}
-              Webflow{" "}
+              Nextjs{" "}
             </Badge>
             <Reveal>
-              <h1 className="pt-5 font-semibold">OUMA BALI - Digital Agency</h1>
+              <h1 className="pt-5 font-semibold">
+                Harcourts Purba Bali - Real Estate
+              </h1>
             </Reveal>
             <Reveal>
               <p className="">Web Development </p>
@@ -83,14 +85,11 @@ export default function Projects() {
             </div>
           </div>
           <div className="flex-1">
-            <Link
-              target="_blank"
-              href={"https://campaign.harcourtspurbabali.com/celesta-villa"}
-            >
+            <Link target="_blank" href={"https://ouma-pi.vercel.app/"}>
               <div className="image-container relative overflow-hidden bg-cover bg-no-repeat  ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/celesta.jpg"}
+                  src={"/ouma.2.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
@@ -101,10 +100,10 @@ export default function Projects() {
                 2025
               </Badge>
               <Badge variant={"outline"} className="py-2 px-6">
-                Framer
+                Nextjs
               </Badge>
               <Reveal>
-                <h1 className="pt-5 font-semibold">Celesta - Real Estate</h1>
+                <h1 className="pt-5 font-semibold">OUMA - Digital Agency</h1>
               </Reveal>
               <Reveal>
                 <p className="">Web Development </p>
@@ -115,11 +114,14 @@ export default function Projects() {
 
         <div className="flex pt-10 space-x-5 items-end">
           <div className="">
-            <Link target="_blank" href={"https://forkomumkmgt.site/"}>
+            <Link
+              target="_blank"
+              href={"https://harcourtspurbabali.com/lp_/fn-lp/"}
+            >
               <div className="image-container relative overflow-hidden bg-no-repeat ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/5.png"}
+                  src={"/fn.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
@@ -127,14 +129,14 @@ export default function Projects() {
             </Link>
             <div className="space-x-2 p-5">
               <Badge variant={"outline"} className="py-2 px-6">
-                2023
+                2025
               </Badge>
               <Badge variant={"outline"} className="py-2 px-6">
                 PHP • Bootstrap • MySQL
               </Badge>
               <Reveal>
                 <h1 className="pt-5 font-semibold">
-                  FORKOM UMKM - Business Portfolio
+                  Family Nest - Villa Development
                 </h1>
               </Reveal>
               <Reveal>
@@ -143,11 +145,11 @@ export default function Projects() {
             </div>
           </div>
           <div className="">
-            <Link target="_blank" href={"https://kratone-petshop.vercel.app/"}>
+            <Link target="_blank" href={"https://dreamrue.kodakode.com/"}>
               <div className="image-container relative overflow-hidden bg-cover bg-no-repeat  ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/6.png"}
+                  src={"/dreamrue.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
@@ -155,15 +157,13 @@ export default function Projects() {
             </Link>
             <div className="space-x-2 p-5">
               <Badge variant={"outline"} className="py-2 px-6">
-                2023
+                2026
               </Badge>
               <Badge variant={"outline"} className="py-2 px-6">
-                NextJS • Shadcn-ui • PostgreSQL • TailwindCSS • Stripe
+                NuxtJS
               </Badge>
               <Reveal>
-                <h1 className="pt-5 font-semibold">
-                  Kratone Petshop - pet equipment shop.
-                </h1>
+                <h1 className="pt-5 font-semibold">DreamRue - Real Estate</h1>
               </Reveal>
               <Reveal>
                 <p className="">Web Development </p>
