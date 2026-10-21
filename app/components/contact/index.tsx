@@ -110,18 +110,18 @@ export default function Contact() {
     <>
       <div id="contact" className="">
         <div className="flex items-center justify-center ">
-          <div className="flex text-4xl lg:text-8xl text-center pt-56 font-semibold">
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+          <div className="flex items-center md:items-stretch text-4xl lg:text-8xl text-center pt-32 md:pt-56 font-semibold">
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
             <Reveal>
               <span className="px-5" style={textStyle}>
                 CONTACT
               </span>
             </Reveal>
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between pt-20 lg:space-x-32  space-x-5">
+        <div className="flex flex-col lg:flex-row justify-between pt-16 md:pt-20 lg:space-x-32">
           <div className="flex-1 ">
             <Reveal>
               <h1 className="text-3xl md:text-3xl lg:text-5xl font-extrabold pb-5">
@@ -139,7 +139,7 @@ export default function Contact() {
                 action="https://api.sheetmonkey.io/form/bikPxrSWGN3JF6RKmMmVYe"
                 onSubmit={form.handleSubmit(onSubmit)}
               >
-                <div className="flex space-x-2">
+                <div className="flex flex-col sm:flex-row sm:space-x-2">
                   <div className="flex-1 pb-5">
                     <FormField
                       control={form.control}
@@ -154,7 +154,7 @@ export default function Contact() {
                       )}
                     />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 pb-5">
                     <FormField
                       control={form.control}
                       name="email"
@@ -193,7 +193,7 @@ export default function Contact() {
               </form>
             </Form>
           </div>
-          <div className="flex-1 pt-20 lg:pt-0 space-y-10 lg:space-y-20">
+          <div className="flex-1 pt-16 lg:pt-0 space-y-10 lg:space-y-20">
             <div>
               <Reveal>
                 <div className="text-xl lg:text-3xl font-bold pb-4">

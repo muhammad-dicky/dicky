@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="flex justify-between pt-20 my-7">
+      <div className="flex justify-between items-center pt-20 my-7">
         <div className="text-xl">
           © 2023 <span className="font-bold">DICKY</span>{" "}
         </div>
@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="flex items-center group scroll-to-top">
           {isVisible && (
             <div className="flex" onClick={scrollToTop}>
-              <div className="pr-2 hover:font-bold transition duration-300 group-hover:translate-y-[-5px]">
+              <div className="pr-2 text-sm md:text-base hover:font-bold transition duration-300 group-hover:translate-y-[-5px]">
                 BACK TO TOP
               </div>
 

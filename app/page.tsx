@@ -83,10 +83,10 @@ export default function Home() {
   return (
     <>
       <main className="container overflow-x-hidden ">
-        <div className="py-28 flex justify-center items-center h-fit relative dark">
-          <div className="p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box">
+        <div className="py-20 md:py-28 flex justify-center items-center h-fit relative dark">
+          <div className="p-6 md:p-10 max-w-sm rounded-lg overflow-visible border border-black shadow-lg text-center relative intro-box">
             <div
-              className=" font-extrabold text-8xl md:text-9xl mb-2 intro-text"
+              className=" font-extrabold text-6xl sm:text-8xl md:text-9xl mb-2 intro-text"
               style={textStyle}
             >
               HEY, I&apos;M DICKY

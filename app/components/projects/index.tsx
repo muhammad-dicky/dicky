@@ -13,15 +13,15 @@ export default function Projects() {
     <>
       <div className="" id="projects">
         <div className="flex items-center justify-center ">
-          <div className="flex text-4xl lg:text-8xl text-center pt-56 font-semibold">
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+          <div className="flex items-center md:items-stretch text-4xl lg:text-8xl text-center pt-32 md:pt-56 font-semibold">
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
             <Reveal>
               <span className="px-5" style={textStyle}>
                 PROJECTS
               </span>
             </Reveal>
 
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export default function Projects() {
               />
             </div>
           </Link>
-          <div className="p-5">
+          <div className="py-5 md:p-5">
             <div className="flex flex-wrap gap-2">
               <Badge variant={"outline"} className="py-2 px-6">
                 2026
@@ -56,7 +56,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="flex pt-10 space-x-5 items-end">
+        <div className="flex flex-col md:flex-row gap-y-5 pt-10 md:space-x-5 md:items-end">
           <div className="flex-1">
             <Link target="_blank" href={"https://nivabali.com/"}>
               <div className="image-container relative overflow-hidden bg-no-repeat ">
@@ -68,7 +68,7 @@ export default function Projects() {
                 />
               </div>
             </Link>
-            <div className="p-5">
+            <div className="py-5 md:p-5">
               <div className="flex flex-wrap gap-2">
                 <Badge variant={"outline"} className="py-2 px-6">
                   2025
@@ -98,7 +98,7 @@ export default function Projects() {
                 />
               </div>
             </Link>
-            <div className="p-5">
+            <div className="py-5 md:p-5">
               <div className="flex flex-wrap gap-2">
                 <Badge variant={"outline"} className="py-2 px-6">
                   2025
@@ -117,7 +117,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="flex pt-10 space-x-5 items-end">
+        <div className="flex flex-col md:flex-row gap-y-5 pt-10 md:space-x-5 md:items-end">
           <div className="">
             <Link
               target="_blank"
@@ -132,7 +132,7 @@ export default function Projects() {
                 />
               </div>
             </Link>
-            <div className="p-5">
+            <div className="py-5 md:p-5">
               <div className="flex flex-wrap gap-2">
                 <Badge variant={"outline"} className="py-2 px-6">
                   2025
@@ -162,7 +162,7 @@ export default function Projects() {
                 />
               </div>
             </Link>
-            <div className="p-5">
+            <div className="py-5 md:p-5">
               <div className="flex flex-wrap gap-2">
                 <Badge variant={"outline"} className="py-2 px-6">
                   2026

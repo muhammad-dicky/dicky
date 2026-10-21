@@ -16,24 +16,24 @@ export default function Services() {
       <div className="">
         <div className="flex items-center justify-center ">
           <div
-            className="flex text-4xl lg:text-8xl text-center pt-56 font-semibold"
+            className="flex items-center md:items-stretch text-4xl lg:text-8xl text-center pt-32 md:pt-56 font-semibold"
             id="services"
           >
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
             <Reveal>
               <span className="px-5" style={textStyle}>
                 SERVICES
               </span>
             </Reveal>
 
-            <Image src={"crop.svg"} width={40} height={40} alt={""} />
+            <Image className="w-7 md:w-10" src={"crop.svg"} width={40} height={40} alt={""} />
           </div>
         </div>
 
-        <div className="flex-row md:flex justify-between pt-20 md:space-x-20">
+        <div className="flex-row md:flex justify-between pt-16 md:pt-20 md:space-x-20">
           <div className="flex-1 space-y-5 ">
             <Reveal>
-              <div className="text-4xl lg:text-7xl font-bold">
+              <div className="text-3xl md:text-4xl lg:text-7xl font-bold">
                 my expertises.
               </div>
             </Reveal>
@@ -45,10 +45,10 @@ export default function Services() {
               </div>
             </Reveal>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 pt-8 md:pt-0">
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold "
+                className="md:text-6xl text-4xl font-extrabold "
                 style={textServices}
               >
                 Web Development
@@ -57,7 +57,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold"
+                className="md:text-6xl text-4xl font-extrabold"
                 style={textServices}
               >
                 Web Design
@@ -66,7 +66,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold"
+                className="md:text-6xl text-4xl font-extrabold"
                 style={textServices}
               >
                 UI/UX Design
@@ -75,10 +75,10 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="flex-row md:flex justify-between pt-20 md:space-x-20">
+        <div className="flex-row md:flex justify-between pt-16 md:pt-20 md:space-x-20">
           <div className="flex-1 space-y-5 ">
             <Reveal>
-              <div className="text-4xl lg:text-7xl font-bold">
+              <div className="text-3xl md:text-4xl lg:text-7xl font-bold">
                 my digital tool box.
               </div>
             </Reveal>
@@ -91,10 +91,10 @@ export default function Services() {
               </div>
             </Reveal>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 pt-8 md:pt-0">
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold "
+                className="md:text-6xl text-4xl font-extrabold "
                 style={textServices}
               >
                 ReactJS
@@ -103,7 +103,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold "
+                className="md:text-6xl text-4xl font-extrabold "
                 style={textServices}
               >
                 NextJS
@@ -112,7 +112,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold "
+                className="md:text-6xl text-4xl font-extrabold "
                 style={textServices}
               >
                 ExpressJS
@@ -121,7 +121,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold"
+                className="md:text-6xl text-4xl font-extrabold"
                 style={textServices}
               >
                 FIGMA
@@ -130,7 +130,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold"
+                className="md:text-6xl text-4xl font-extrabold"
                 style={textServices}
               >
                 TailwindCSS
@@ -139,7 +139,7 @@ export default function Services() {
 
             <Reveal>
               <div
-                className="md:text-6xl text-5xl font-extrabold"
+                className="md:text-6xl text-4xl font-extrabold"
                 style={textServices}
               >
                 PHP
