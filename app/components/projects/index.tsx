@@ -26,27 +26,28 @@ export default function Projects() {
         </div>
 
         <div>
-          <Link target="_blank" href={"https://harcourtspurbabali.vercel.app/"}>
+          <Link target="_blank" href={"https://www.dreamrue.com/"}>
             <div className="image-container relative overflow-hidden bg-cover bg-no-repeat pt-10 ">
               <Image
                 className="image transform transition-transform duration-700 ease-in-out hover:scale-105 "
-                src={"/hpb.jpg"}
+                src={"/dreamrue-new.jpg"}
                 fill={true}
                 alt={"projects"}
               />
             </div>
           </Link>
-          <div className="space-x-2 p-5">
-            <Badge variant={"outline"} className="py-2 px-6">
-              2026
-            </Badge>
-            <Badge variant={"outline"} className="py-2 px-6">
-              {" "}
-              Nextjs{" "}
-            </Badge>
+          <div className="p-5">
+            <div className="flex flex-wrap gap-2">
+              <Badge variant={"outline"} className="py-2 px-6">
+                2026
+              </Badge>
+              <Badge variant={"outline"} className="py-2 px-6">
+                Nuxtjs
+              </Badge>
+            </div>
             <Reveal>
               <h1 className="pt-5 font-semibold">
-                Harcourts Purba Bali - Real Estate
+                DreamRue - Real Estate
               </h1>
             </Reveal>
             <Reveal>
@@ -67,13 +68,15 @@ export default function Projects() {
                 />
               </div>
             </Link>
-            <div className="space-x-2 p-5">
-              <Badge variant={"outline"} className="py-2 px-6">
-                2025
-              </Badge>
-              <Badge variant={"outline"} className="py-2 px-6">
-                PHP • Wordpress • MySQL
-              </Badge>
+            <div className="p-5">
+              <div className="flex flex-wrap gap-2">
+                <Badge variant={"outline"} className="py-2 px-6">
+                  2025
+                </Badge>
+                <Badge variant={"outline"} className="py-2 px-6">
+                  PHP • Wordpress • MySQL
+                </Badge>
+              </div>
               <Reveal>
                 <h1 className="pt-5 font-semibold">
                   NIVA PADONAN - Real Estate
@@ -85,23 +88,25 @@ export default function Projects() {
             </div>
           </div>
           <div className="flex-1">
-            <Link target="_blank" href={"https://ouma-pi.vercel.app/"}>
+            <Link target="_blank" href={"https://www.oumacreatives.com/"}>
               <div className="image-container relative overflow-hidden bg-cover bg-no-repeat  ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/ouma.2.jpg"}
+                  src={"/ouma-new.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
               </div>
             </Link>
-            <div className="space-x-2 p-5">
-              <Badge variant={"outline"} className="py-2 px-6">
-                2025
-              </Badge>
-              <Badge variant={"outline"} className="py-2 px-6">
-                Nextjs
-              </Badge>
+            <div className="p-5">
+              <div className="flex flex-wrap gap-2">
+                <Badge variant={"outline"} className="py-2 px-6">
+                  2025
+                </Badge>
+                <Badge variant={"outline"} className="py-2 px-6">
+                  Nextjs
+                </Badge>
+              </div>
               <Reveal>
                 <h1 className="pt-5 font-semibold">OUMA - Digital Agency</h1>
               </Reveal>
@@ -116,24 +121,26 @@ export default function Projects() {
           <div className="">
             <Link
               target="_blank"
-              href={"https://harcourtspurbabali.com/lp_/fn-lp/"}
+              href={"https://harcourtspurbabali.com/lp_/family-nest-lp/"}
             >
               <div className="image-container relative overflow-hidden bg-no-repeat ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/fn.jpg"}
+                  src={"/familynest-new.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
               </div>
             </Link>
-            <div className="space-x-2 p-5">
-              <Badge variant={"outline"} className="py-2 px-6">
-                2025
-              </Badge>
-              <Badge variant={"outline"} className="py-2 px-6">
-                PHP • Bootstrap • MySQL
-              </Badge>
+            <div className="p-5">
+              <div className="flex flex-wrap gap-2">
+                <Badge variant={"outline"} className="py-2 px-6">
+                  2025
+                </Badge>
+                <Badge variant={"outline"} className="py-2 px-6">
+                  PHP • Bootstrap • MySQL
+                </Badge>
+              </div>
               <Reveal>
                 <h1 className="pt-5 font-semibold">
                   Family Nest - Villa Development
@@ -145,25 +152,27 @@ export default function Projects() {
             </div>
           </div>
           <div className="">
-            <Link target="_blank" href={"https://dreamrue.kodakode.com/"}>
+            <Link target="_blank" href={"https://digibuddy.id/"}>
               <div className="image-container relative overflow-hidden bg-cover bg-no-repeat  ">
                 <Image
                   className="image transform transition-transform duration-700 ease-in-out  hover:scale-105 "
-                  src={"/dreamrue.jpg"}
+                  src={"/digibuddy-new.jpg"}
                   fill={true}
                   alt={"projects"}
                 />
               </div>
             </Link>
-            <div className="space-x-2 p-5">
-              <Badge variant={"outline"} className="py-2 px-6">
-                2026
-              </Badge>
-              <Badge variant={"outline"} className="py-2 px-6">
-                NuxtJS
-              </Badge>
+            <div className="p-5">
+              <div className="flex flex-wrap gap-2">
+                <Badge variant={"outline"} className="py-2 px-6">
+                  2026
+                </Badge>
+                <Badge variant={"outline"} className="py-2 px-6">
+                  Nextjs
+                </Badge>
+              </div>
               <Reveal>
-                <h1 className="pt-5 font-semibold">DreamRue - Real Estate</h1>
+                <h1 className="pt-5 font-semibold">Digibuddy.id - LMS</h1>
               </Reveal>
               <Reveal>
                 <p className="">Web Development </p>
